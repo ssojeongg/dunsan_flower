@@ -27,7 +27,7 @@ const MainMap = () => {
             <p><FontAwesomeIcon color="#ccc" icon={faPhone} />&nbsp;&nbsp;전화번호</p>
             <ul>
               <li>0507-1455-6771</li>
-              <li>010-6788-677</li>
+              <li>010-6788-6771</li>
             </ul>
           </div>
           <div className="map_time">

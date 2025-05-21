@@ -1,3 +1,6 @@
+.MainMap {
+  margin-bottom: 6.1rem;
+}
 .MainMap > .inner > .submap_area {
   width: 100%;
   display: flex;

@@ -4,12 +4,14 @@ import '../assets/css/SubMap.css'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot, faDiamondTurnRight, faClock, faPhone, faUser, faCircleExclamation } from '@fortawesome/free-solid-svg-icons';
+import TitleTheme from "../components/TitleTheme";
 
 
 const MainMap = () => {
   return (
     <div className="MainMap">
       <div className="inner">
+        <TitleTheme title={"오시는 길"} />
         <NaverMap />
         <div className="map_area">
           <div className="map_address">
@@ -40,7 +42,7 @@ const MainMap = () => {
             <p><FontAwesomeIcon color="#ccc" icon={faPhone} />&nbsp;&nbsp;전화번호</p>
             <ul>
               <li>0507-1455-6771</li>
-              <li>010-6788-677</li>
+              <li>010-6788-6771</li>
             </ul>
           </div>
           <div className="map_info">
