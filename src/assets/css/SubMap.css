@@ -62,7 +62,7 @@
   font-weight: normal;
   color: var(--color-blue)
 }
-.map_address, .map_time, .map_tel {
+.map_address, .map_visit, .map_time, .map_tel, .map_info {
   width: 100%;
   border-top: 1px solid #ebebeb;
   padding-top: 2.5rem;
@@ -70,12 +70,12 @@
   gap: 1rem;
   font-size: 0.9rem;
 }
-.map_address > p:first-child, .map_time > p:first-child, .map_tel > p:first-child {
+.map_address > p:first-child, .map_visit > p:first-child, .map_time > p:first-child, .map_tel > p:first-child, .map_info > p:first-child {
   color: #111;
   font-weight: bold;
   width: 10rem;
 }
-.map_address > p:nth-child(2), .map_time > p:nth-child(2), .map_tel > p:nth-child(2) {
+.map_address > p:nth-child(2), .map_visit > p:nth-child(2), .map_time > p:nth-child(2), .map_tel > p:nth-child(2) {
   width: 6.1rem;
 }
 .map_info_area {

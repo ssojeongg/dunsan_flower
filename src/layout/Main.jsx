@@ -39,6 +39,7 @@ const Main = () => {
       <MainBlog />
       <TitleTheme title={"오시는 길"} />
       <MainMap />
+      <TitleTheme title={"이미지 갤러리"} />
     </div>
   );
 };
