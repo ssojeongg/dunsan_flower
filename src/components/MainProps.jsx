@@ -1,8 +1,8 @@
-import '../assets/css/Main_props.css';
+import '../assets/css/MainProps.css';
 
 const Main_props = ({title, name1, img1, des1, name2, img2, small, des2, name3, img3, des3}) => {
   return (
-    <div className="Main_props">
+    <div className="MainProps">
       <div className="inner">
         <div className="main_props_title">
           <p className='title'>{title}</p>

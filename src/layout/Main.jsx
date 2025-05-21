@@ -1,8 +1,9 @@
-import Main_intro from '../components/Main_intro';
-import Main_props from '../components/Main_props';
-import Main_props2 from '../components/Main_props2';
-import MainBlog from '../components/MainBlog';
 import TitleTheme from '../components/TitleTheme';
+import MainIntro from '../components/MainIntro';
+import MainProps from '../components/MainProps';
+import MainProps2 from '../components/MainProps2';
+import MainBlog from '../components/MainBlog';
+import MainMap from '../components/MainMap';
 
 import mainImg1 from '../data/mainImg1';
 import mainImg2 from '../data/mainImg2';
@@ -11,9 +12,9 @@ const Main = () => {
   return (
     <div className="Main">
       <TitleTheme title={"꽃매장 소개"} />
-      <Main_intro />
+      <MainIntro />
       {mainImg1.map((section, idx) => (
-        <Main_props
+        <MainProps
           key={idx}
           title={section.title}
           img1={section.items[0]?.img}
@@ -27,7 +28,7 @@ const Main = () => {
           des3={section.items[2]?.des}
         />
       ))}
-      <Main_props2
+      <MainProps2
         title={mainImg2.title}
         img1={mainImg2.items[0].img}
         name1={mainImg2.items[0].name}
@@ -36,6 +37,8 @@ const Main = () => {
       />
       <TitleTheme title={"블로그"} />
       <MainBlog />
+      <TitleTheme title={"오시는 길"} />
+      <MainMap />
     </div>
   );
 };

@@ -1,0 +1,96 @@
+.MainMap > .inner > .submap_area {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ebebeb;
+  margin-bottom: 40px;
+}
+.MainMap > .inner > .submap_area > .title {
+  display: inline-block;
+  color: var(--color-blue);
+  letter-spacing: -.8px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  padding-bottom: 7px;
+}
+.MainMap > .inner > .map_area {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: left;
+  align-items:flex-start;
+  flex-direction: column;
+  gap: 50px;
+}
+.MainMap > .inner > .map_area > .map_address {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.MainMap > .inner > .map_area > .map_address {
+  display: flex;
+}
+.MainMap > .inner > .map_area > .map_address  h2:nth-of-type(1) {
+  display: none;
+}
+.MainMap > .inner > .map_area > .map_address  h2:nth-of-type(2) {
+  color: var(--color-green);
+}
+.MainMap > .inner > .map_area > .map_address  .map_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.MainMap > .inner > .map_area > .map_address  .map_btn > button {
+  width: auto;
+  height: 40px;
+  padding: 0 20px;
+  margin-left: 4px;
+  border-radius: 2px;
+  border: 0;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 40px;
+  color: #fff;
+  background-color: var(--color-green);
+}
+.MainMap > .inner > .map_area > .map_address  h2 {
+  font-size: 2rem;
+  font-weight: normal;
+  color: var(--color-blue)
+}
+.map_address, .map_visit, .map_time, .map_tel, .map_info {
+  width: 100%;
+  border-top: 1px solid #ebebeb;
+  padding-top: 2.5rem;
+  display: flex;
+  gap: 1rem;
+  font-size: 0.9rem;
+}
+.map_address > p:first-child, .map_visit > p:first-child, .map_time > p:first-child, .map_tel > p:first-child, .map_info > p:first-child {
+  color: #111;
+  font-weight: bold;
+  width: 10rem;
+}
+.map_address > p:nth-child(2), .map_visit > p:nth-child(2), .map_time > p:nth-child(2), .map_tel > p:nth-child(2) {
+  width: 6.1rem;
+}
+.map_info_area {
+  display: flex;
+  gap: 2.3rem;
+}
+.map_info_area > ul:nth-of-type(1) {
+  width: 6.1rem;
+}
+.gray {
+  color: #999;
+  font-weight: bold;
+}
+.map_area > ul:last-of-type {
+ width: 28rem;
+ text-align: right;
+ color: var(--color-gray);
+}

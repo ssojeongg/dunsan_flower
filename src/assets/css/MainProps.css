@@ -1,8 +1,8 @@
-.Main_props {
+.MainProps {
   width: 100%;
   margin-top: 80px;
 }
-.Main_props .main_props_title {
+.MainProps .main_props_title {
   margin-bottom: 30px;
   border-bottom: 1px solid var(--color-lightgray);
   padding-bottom: 0.5rem;
@@ -10,48 +10,48 @@
   justify-content: space-between;
   align-items: center;
 }
-.Main_props .main_props_title > .title {
+.MainProps .main_props_title > .title {
   text-decoration: underline;
   text-decoration-color: var(--color-green);
   text-underline-offset: 14px;
   font-size: 1.2rem;
   color: var(--color-green);
 }
-.Main_props .main_props_img {
+.MainProps .main_props_img {
   display: flex;
   justify-content: space-between;
   height: 338px;
 }
-.Main_props .main_props_img > .img_box {
+.MainProps .main_props_img > .img_box {
   display: flex;
   flex-direction: column;
   justify-content: left;
 }
-.Main_props .main_props_img > .img_wrap > .img_box {
+.MainProps .main_props_img > .img_wrap > .img_box {
   width: 353px;
   height: 235px;
   overflow: hidden;
 }
-.Main_props .main_props_img > .img_wrap > .img_box > img {
+.MainProps .main_props_img > .img_wrap > .img_box > img {
   width: 100%;
   height: 100%;
 }
-.Main_props .main_props_img > .img_wrap > .img_box > img:hover {
+.MainProps .main_props_img > .img_wrap > .img_box > img:hover {
   transform: scale(1.1);
   transition: .2s;
 }
-.Main_props .main_props_img .txt_box {
+.MainProps .main_props_img .txt_box {
   padding-top: 1rem;
   line-height: 2.3rem;
 }
-.Main_props .main_props_img .img_name {
+.MainProps .main_props_img .img_name {
   font-size: 1.3rem;
 }
-.Main_props .main_props_img .img_des {
+.MainProps .main_props_img .img_des {
   font-size: 1.3rem;
   color: var(--color-green);
 }
-.Main_props .main_props_img .img_small {
+.MainProps .main_props_img .img_small {
   color: var(--color-gray);
 } 
 
