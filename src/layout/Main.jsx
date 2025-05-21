@@ -7,11 +7,10 @@ import TitleTheme from '../components/TitleTheme';
 import mainImg1 from '../data/mainImg1';
 import mainImg2 from '../data/mainImg2';
 
-import mainBlogData from '../data/mainBlogData'
-
 const Main = () => {
   return (
     <div className="Main">
+      <TitleTheme title={"꽃매장 소개"} />
       <Main_intro />
       {mainImg1.map((section, idx) => (
         <Main_props
