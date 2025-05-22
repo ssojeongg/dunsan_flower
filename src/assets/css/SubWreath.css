@@ -1,0 +1,13 @@
+.SubWreath {
+  width: 100%;
+  margin-bottom: 6.1rem;
+}
+.SubWreath .sub_wreath_box img {
+  width: 100%;
+}
+.SubWreath .sub_wreath_box p {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 1rem 0;
+}
