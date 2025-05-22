@@ -4,6 +4,7 @@ import Main from './layout/Main'
 import Footer from './layout/Footer'
 import SubMap from './pages/SubMap'
 import SubBlog from './pages/SubBlog'
+import Subpage from './pages/Subpage'
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -12,9 +13,11 @@ function App() {
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route path='/dunsan_flower/' element={<Main />} />
-        <Route path='/map' element={<SubMap />} />
-        <Route path='/blog' element={<SubBlog />} />
+        <Route path="/dunsan_flower/" element={<Main />} />
+        <Route path="/sub/1" element={<Main />} />
+        <Route path="/sub/:id" element={<Subpage />} />
+        <Route path='/sub/9' element={<SubMap />} />
+        <Route path='/sub/10' element={<SubBlog />} />
       </Routes>
       <Footer />
     </BrowserRouter>

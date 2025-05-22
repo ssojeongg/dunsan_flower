@@ -9,6 +9,7 @@ import { useNavigate } from 'react-router-dom';
 const Header = () => {
    const [scrollPosition, setScrollPosition] = useState(0);
    const navigate = useNavigate();
+   const [selectedMenu, setSelectedMenu] = useState(null);
 
    useEffect(() => {
     const updateScroll = () => {
@@ -18,18 +19,16 @@ const Header = () => {
     return () => window.removeEventListener('scroll', updateScroll);
   }, []);
 
-  const handleMenuClick = (id) => {
-    if (id === 1) {
-      navigate('/dunsan_flower/');
-    }
-    else if (id === 9) {
-      navigate('/blog');
-    }
-    else if (id === 10) {
-      navigate('/map');
-    } 
-  };
+  const handleMenuClick = (menuId) => {
+    const selectedMenu = menus.find((m) => m.id === menuId);
 
+    if (selectedMenu) {
+      setSelectedMenu(menuId);
+      if (selectedMenu.title.length > 0) {
+        navigate(`/sub/${menuId}`);
+      } 
+    }
+  };
   return (
     <div className="Header">
       <div className={scrollPosition < 100 ? "header_gnb" : "change header_gnb"}>

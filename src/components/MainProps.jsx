@@ -1,6 +1,6 @@
 import '../assets/css/MainProps.css';
 
-const Main_props = ({title, name1, img1, des1, name2, img2, small, des2, name3, img3, des3}) => {
+const MainProps = ({title, name1, img1, des1, name2, img2, small, des2, name3, img3, des3}) => {
   return (
     <div className="MainProps">
       <div className="inner">
@@ -43,4 +43,4 @@ const Main_props = ({title, name1, img1, des1, name2, img2, small, des2, name3, 
   )
 }
 
-export default Main_props
+export default MainProps

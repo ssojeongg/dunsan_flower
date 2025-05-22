@@ -1,23 +1,42 @@
 import { useEffect, useRef, useState } from "react";
-import markerImg from "/src/assets/img/marker.png";
+import markerImg from "/src/assets/img/marker.png"; // 이미지 import
 
 const NaverMap = () => {
   const mapRef = useRef(null);
-  const [mapSize] = useState({ width: '100%', height: '400px' });
+  const [mapSize, setMapSize] = useState({ width: "100%", height: "400px" });
+
+  useEffect(() => {
+    // 🔹 화면 크기에 따라 지도 크기 변경
+    const updateMapSize = () => {
+      if (window.innerWidth <= 767) {
+        setMapSize({ height: "320px" });
+      } else {
+        setMapSize({ width: "100%", height: "400px" });
+      }
+    };
+
+    // 초기 실행 및 리사이즈 이벤트 추가
+    updateMapSize();
+    window.addEventListener("resize", updateMapSize);
+
+    return () => {
+      window.removeEventListener("resize", updateMapSize);
+    };
+  }, []);
 
   useEffect(() => {
     const loadMap = () => {
       if (!window.naver) return;
 
-      const center = new window.naver.maps.LatLng(36.3532996321856, 127.389539811866);
+      const centerPosition = new window.naver.maps.LatLng(36.300398, 127.351689);
 
       const map = new window.naver.maps.Map(mapRef.current, {
-        center: center,
+        center: centerPosition,
         zoom: 14,
       });
 
       new window.naver.maps.Marker({
-        position: center,
+        position: centerPosition,
         map,
         icon: {
           url: markerImg,
@@ -30,13 +49,14 @@ const NaverMap = () => {
     };
 
     const script = document.createElement("script");
-    script.src = `https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=${import.meta.env.VITE_CLIENT_ID}`;
+    script.src = `https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=` + import.meta.env.VITE_CLIENT_ID;
     script.async = true;
+
     script.onload = loadMap;
-    document.head.appendChild(script);
+    document.body.appendChild(script);
 
     return () => {
-      document.head.removeChild(script);
+      document.body.removeChild(script);
     };
   }, []);
 
