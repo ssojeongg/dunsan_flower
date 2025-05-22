@@ -5,6 +5,7 @@ import Footer from './layout/Footer'
 import SubMap from './pages/SubMap'
 import SubBlog from './pages/SubBlog'
 import Subpage from './pages/Subpage'
+import SubIntro from './pages/SubIntro'
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route path="/dunsan_flower/" element={<Main />} />
         <Route path="/sub/1" element={<Main />} />
+        <Route path="/sub/2" element={<SubIntro />} />
         <Route path="/sub/:id" element={<Subpage />} />
         <Route path='/sub/9' element={<SubMap />} />
         <Route path='/sub/10' element={<SubBlog />} />
