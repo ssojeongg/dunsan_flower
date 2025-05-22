@@ -11,7 +11,7 @@ import mainImg2 from '../data/mainImg2';
 const Main = () => {
   return (
     <div className="Main">
-      <TitleTheme title={"꽃매장 소개"} />
+      <TitleTheme title={"꽃매장 소개"} more={"더보기 >"} />
       <MainIntro />
       {mainImg1.map((section, idx) => (
         <MainProps
@@ -35,11 +35,11 @@ const Main = () => {
         img2={mainImg2.items[1].img}
         name2={mainImg2.items[1].name}
       />
-      <TitleTheme title={"블로그"} />
+      <TitleTheme title={"블로그"} more={"더보기 >"}/>
       <MainBlog />
-      <TitleTheme title={"오시는 길"} />
+      <TitleTheme title={"오시는 길"} more={"더보기 >"} />
       <MainMap />
-      <TitleTheme title={"이미지 갤러리"} />
+      <TitleTheme title={"이미지 갤러리"} more={"더보기 >"} />
     </div>
   );
 };

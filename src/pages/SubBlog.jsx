@@ -7,7 +7,7 @@ const SubBlog = () => {
   return (
     <div className="MainBlog">
       <div className="inner">
-        <TitleTheme title={"블로그"} />
+        <TitleTheme title={"블로그"}/>
         <div className="blog_card_wrap">
             <div className="card_area sub" >
           {subBlogData.map((item, idx) => (
