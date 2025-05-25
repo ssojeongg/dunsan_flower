@@ -36,6 +36,9 @@
   font-size: 1rem;
   font-weight: bold;
 }
+.Header .header_nav > li:hover {
+  color: var(--color-green);
+}
 .Header .header_menu > ul {
   display: flex;
   align-items: center;
@@ -76,4 +79,57 @@
 }
 .Header .site_sub > .site_des {
   font-size: 1rem;
+}
+.Header .side_menu_bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 320px;
+  height: 100vh;
+  background-color: var(--color-green);
+}
+.Header .side_menu_bar .logo_area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.4rem 2rem 4.9rem 3rem;
+}
+.Header .side_menu_bar .logo_area > .logo {
+  font-size: 1.5em;
+  color: var(--color-white);
+}
+.Header .side_menu_bar .logo_area > button {
+  background: none;
+  border: none;
+  color: var(--color-white);
+  background-color: rgba(0, 0, 0, .08);
+  padding: 0.7rem;
+}
+.Header .side_menu_bar .header_nav ul {
+  width: 100%;
+}
+.Header .side_menu_bar .header_nav ul li{
+  font-size: 1rem;
+  color: var(--color-white);
+  opacity: 0.5;
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid #ffffff55;
+  padding-left: 3rem;
+  padding-right: 2rem;
+}
+.Header .side_menu_bar .header_nav ul li:hover {
+  background-color: rgba(255, 255, 255, .05);
+  opacity: 1;
+}
+.Header .side_menu_bar .header_nav ul li:last-child {
+  border: none;
+}
+
+
+.green {
+  color: var(--color-green);
+  border-bottom: 1px solid var(--color-green);
+}
+.white {
+  opacity: 1 !important;
 }
