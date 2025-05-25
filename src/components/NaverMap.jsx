@@ -28,7 +28,7 @@ const NaverMap = () => {
     const loadMap = () => {
       if (!window.naver) return;
 
-      const centerPosition = new window.naver.maps.LatLng(36.300398, 127.351689);
+      const centerPosition = new window.naver.maps.LatLng(36.3532996321856, 127.389539811866);
 
       const map = new window.naver.maps.Map(mapRef.current, {
         center: centerPosition,
@@ -49,14 +49,14 @@ const NaverMap = () => {
     };
 
     const script = document.createElement("script");
-    script.src = `https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=` + import.meta.env.VITE_CLIENT_ID;
+    script.src = `https://oapi.map.naver.com/openapi/v3/maps.js?ncpKeyId=${import.meta.env.VITE_CLIENT_ID}`
     script.async = true;
 
     script.onload = loadMap;
-    document.body.appendChild(script);
+    document.head.appendChild(script);
 
     return () => {
-      document.body.removeChild(script);
+      document.head.removeChild(script);
     };
   }, []);
 
