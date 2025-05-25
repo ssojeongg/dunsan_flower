@@ -1,6 +1,9 @@
 .SubIntro {
-  width: 100%;
+  width: 100vw;
   margin-bottom: 6.15rem;
+}
+.SubIntro.width {
+  width: calc(100% - 320px);
 }
 
 .SubIntro .img_box img {

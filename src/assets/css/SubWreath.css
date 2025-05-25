@@ -1,6 +1,9 @@
 .SubWreath {
-  width: 100%;
+  width: 100vw;
   margin-bottom: 6.1rem;
+}
+.SubWreath.width {
+  width: calc(100% - 320px);
 }
 .SubWreath .sub_wreath_box img {
   width: 100%;

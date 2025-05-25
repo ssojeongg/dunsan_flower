@@ -1,6 +1,9 @@
 .MainProps2 {
-  width: 100%;
+  width: 100vw;
   margin-top: 80px;
+}
+.MainProps2.width {
+  width: calc(100% - 320px);
 }
 .MainProps2 .main_props_title {
   margin-bottom: 30px;

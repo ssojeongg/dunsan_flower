@@ -5,7 +5,10 @@
 }
 
 .Header {
-  width: 100%;
+  width: 100vw;
+}
+.Header.width {
+  width: calc(100% - 320px);
 }
 .Header .header_gnb {
   position: fixed;
@@ -83,9 +86,11 @@
 .Header .side_menu_bar {
   position: fixed;
   top: 0;
-  right: 0;
+  right: -999px;
   width: 320px;
   height: 100vh;
+  overflow-y: auto;
+  display: block;
   background-color: var(--color-green);
 }
 .Header .side_menu_bar .logo_area {
@@ -132,4 +137,9 @@
 }
 .white {
   opacity: 1 !important;
+}
+.side_menu_bar.open {
+  position: fixed;
+  top: 0;
+  right: 0;
 }

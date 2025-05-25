@@ -1,8 +1,11 @@
 import '../assets/css/MainProps.css';
 
+import useSideMenuStore from '../store/sideMenuStore'
+
 const MainProps = ({title, name1, img1, des1, name2, img2, small, des2, name3, img3, des3}) => {
+  const { sideMenuOpen } = useSideMenuStore();
   return (
-    <div className="MainProps">
+    <div className={`MainProps ${sideMenuOpen ? 'width' : ''}`}>
       <div className="inner">
         <div className="main_props_title">
           <p className='title'>{title}</p>

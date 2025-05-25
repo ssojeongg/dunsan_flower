@@ -8,9 +8,14 @@ import MainMap from '../components/MainMap';
 import mainImg1 from '../data/mainImg1';
 import mainImg2 from '../data/mainImg2';
 
+import useSideMenuStore from '../store/sideMenuStore';
+
+import '../assets/css/Main.css'
+
 const Main = () => {
+  const { sideMenuOpen } = useSideMenuStore();
   return (
-    <div className="Main">
+    <div className={`Main ${sideMenuOpen ? 'width' : ''}`}>
       <TitleTheme title={"꽃매장 소개"} more={"더보기 >"} />
       <MainIntro />
       {mainImg1.map((section, idx) => (

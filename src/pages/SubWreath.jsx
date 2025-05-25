@@ -3,9 +3,12 @@ import TitleTheme from '../components/TitleTheme'
 
 import subWreathData from '../data/subWreathData'
 
+import useSideMenuStore from '../store/sideMenuStore'
+
 const SubWreath = () => {
+  const { sideMenuOpen } = useSideMenuStore();
   return (
-    <div className='SubWreath'>
+    <div className={`SubWreath ${sideMenuOpen ? 'width' : ''}`}>
       <div className="inner">
         <TitleTheme  title={"축하근조화환"} />
         <div className="sub_wreath_area">

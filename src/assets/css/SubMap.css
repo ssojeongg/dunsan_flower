@@ -1,5 +1,9 @@
 .MainMap {
+  width: 100vw;
   margin-bottom: 6.1rem;
+}
+.MainMap.width {
+  width: calc(100% - 320px);
 }
 .MainMap > .inner > .submap_area {
   width: 100%;

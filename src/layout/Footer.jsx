@@ -2,9 +2,12 @@ import "../assets/css/Footer.css"
 
 import logo from "../assets/img/logo.jpeg"
 
+import useSideMenuStore from '../store/sideMenuStore';
+
 const Footer = () => {
+  const { sideMenuOpen } = useSideMenuStore();
   return (
-    <div className="Footer">
+        <div className={`Footer ${sideMenuOpen ? 'width' : ''}`}>
       <div className="inner">
         <div className="ft_top">
           <div className="search_area">

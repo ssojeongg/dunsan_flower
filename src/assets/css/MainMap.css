@@ -1,5 +1,12 @@
+.MainMap {
+  width: 100vw;
+}
+/* .MainMap.width {
+  width: calc(100% - 320px);
+} */
+
 .MainMap > .inner > .submap_area {
-  width: 100%;
+  width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;

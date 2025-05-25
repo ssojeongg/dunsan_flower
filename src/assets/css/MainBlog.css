@@ -1,6 +1,9 @@
 .MainBlog {
-  width: 100%;
+  width: 100vw;
   margin-bottom: 6.15rem;
+}
+.MainBlog.width {
+  width: calc(100% - 320px);
 }
 .MainBlog .blog_card_wrap .card_area {
   display: flex;

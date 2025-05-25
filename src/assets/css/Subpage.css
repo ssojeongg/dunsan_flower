@@ -1,6 +1,9 @@
 .Subpage {
-  width: 100%;
+  width: 100vw;
   margin-bottom: 4.9rem;
+}
+.Subpage.width {
+  width: calc(100% - 320px);
 }
 .Subpage .subpage_img {
   display: flex;

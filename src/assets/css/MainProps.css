@@ -1,9 +1,12 @@
 .MainProps {
-  width: 100%;
-  margin-top: 80px;
+  width: 100vw;
+  margin-top: 6.1rem;
+}
+.MainProps.width {
+  width: calc(100% - 320px);
 }
 .MainProps .main_props_title {
-  margin-bottom: 30px;
+  margin-bottom: 2.3rem;
   border-bottom: 1px solid var(--color-lightgray);
   padding-bottom: 0.5rem;
   display: flex;

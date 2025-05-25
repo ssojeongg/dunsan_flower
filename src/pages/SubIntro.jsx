@@ -2,6 +2,7 @@ import '../assets/css/SubIntro.css'
 import TitleTheme from '../components/TitleTheme'
 
 import subIntroSlideData from '../data/subIntroSlideData'
+import useSideMenuStore from '../store/sideMenuStore'
 
 import { useState } from 'react'
 
@@ -20,8 +21,9 @@ const SubIntro = () => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null)
   const [activeIndex, setActiveIndex] = useState(0)
 
+  const { sideMenuOpen } = useSideMenuStore();
   return (
-    <div className="SubIntro">
+    <div className={`SubIntro ${sideMenuOpen ? 'width' : ''}`}>
       <TitleTheme title={"꽃매장 소개"} />
       <div className="inner">
         {/* 메인 슬라이드 */}

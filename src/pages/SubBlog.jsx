@@ -2,10 +2,12 @@ import '../assets/css/MainBlog.css'
 import TitleTheme from '../components/TitleTheme'
 
 import subBlogData from '../data/subBlogData'
+import useSideMenuStore from '../store/sideMenuStore'
 
 const SubBlog = () => {
+  const { sideMenuOpen } = useSideMenuStore();
   return (
-    <div className="MainBlog">
+    <div className={`MainBlog ${sideMenuOpen ? 'width' : ''}`}>
       <div className="inner">
         <TitleTheme title={"블로그"}/>
         <div className="blog_card_wrap">

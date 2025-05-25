@@ -3,17 +3,19 @@ import '../assets/css/Header.css';
 import menus from '../data/menu';
 import logo from '../assets/img/logo.jpeg';
 
+import useSideMenuStore from '../store/sideMenuStore';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 
-import { useState, useEffect } from 'react';
+import { useState ,useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const Header = () => {
    const [scrollPosition, setScrollPosition] = useState(0);
    const navigate = useNavigate();
    const [selectedMenu, setSelectedMenu] = useState(null);
-   const [sideMenuOpen, setSideMenuOpen] = useState(false);
+   const { sideMenuOpen, openMenu, closeMenu } = useSideMenuStore();
 
 
    useEffect(() => {
@@ -33,15 +35,8 @@ const Header = () => {
       } 
     }
   };
-  const openMenu = () => {
-    setSideMenuOpen(true);
-  };
-
-  const closeMenu = () => {
-    setSideMenuOpen(false)
-  }
   return (
-    <div className="Header">
+    <div className={sideMenuOpen ? 'Header width' : 'Header'}>
       <div className={scrollPosition < 100 ? "header_gnb" : "change header_gnb"}>
         <div className="header_gnb_inner">
           <div className="header_nav">
@@ -73,7 +68,7 @@ const Header = () => {
         </div>
       </div>
       {sideMenuOpen && (
-      <div className="side_menu_bar">
+      <div className={sideMenuOpen ? 'side_menu_bar open' : 'side_menu_bar'}>
         <div className="inner">
           <div className="logo_area">
             <p className="logo">

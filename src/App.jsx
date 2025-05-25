@@ -13,6 +13,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 function App() {
   return (
     <BrowserRouter>
+    <div className="App">
       <Header />
       <Routes>
         <Route path="/dunsan_flower/" element={<Main />} />
@@ -20,10 +21,11 @@ function App() {
         <Route path="/sub/2" element={<SubIntro />} />
         <Route path="/sub/:id" element={<Subpage />} />
         <Route path='/sub/8' element={<SubWreath />} />
-        <Route path='/sub/9' element={<SubMap />} />
-        <Route path='/sub/10' element={<SubBlog />} />
+        <Route path='/sub/9' element={<SubBlog />} />
+        <Route path='/sub/10' element={<SubMap />} />
       </Routes>
       <Footer />
+      </div>
     </BrowserRouter>
   );
 }

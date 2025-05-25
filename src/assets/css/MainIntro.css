@@ -1,4 +1,10 @@
 .MainIntro {
+  width: 100vw;
+}
+.MainIntro.width {
+  width: calc(100% - 320px);
+}
+.MainIntro .main_intro_video {
   width: 100%;
 }
 iframe {

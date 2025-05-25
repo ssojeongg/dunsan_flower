@@ -6,10 +6,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot, faDiamondTurnRight, faClock, faPhone, faUser, faCircleExclamation } from '@fortawesome/free-solid-svg-icons';
 import TitleTheme from "../components/TitleTheme";
 
+import useSideMenuStore from '../store/sideMenuStore'
 
 const MainMap = () => {
+  const { sideMenuOpen } = useSideMenuStore();
   return (
-    <div className="MainMap">
+    <div className={`MainMap ${sideMenuOpen ? 'width' : ''}`}>
       <div className="inner">
         <TitleTheme title={"오시는 길"} />
         <NaverMap />

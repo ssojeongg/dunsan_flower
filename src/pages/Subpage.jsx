@@ -3,13 +3,16 @@ import '../assets/css/Subpage.css';
 import subData from '../data/subData';
 import TitleTheme from '../components/TitleTheme'; // TitleTheme import 추가
 
+import useSideMenuStore from '../store/sideMenuStore'
+
 const Subpage = () => {
   const { id } = useParams();
   const pageId = parseInt(id, 10);
   const currentData = subData.find(item => item.id === pageId);
+  const { sideMenuOpen } = useSideMenuStore();
 
   return (
-    <div className="Subpage">
+    <div className={`Subpage ${sideMenuOpen ? 'width' : ''}`}>
       <div className="inner">
         {currentData && <TitleTheme title={currentData.menu} />}
 

@@ -1,0 +1,8 @@
+.Main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.Main.width {
+  width: calc(100% - 320px);
+}
