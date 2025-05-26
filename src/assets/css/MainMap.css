@@ -1,5 +1,6 @@
 .MainMap {
   width: 100vw;
+  margin-bottom: 0 !important;
 }
 /* .MainMap.width {
   width: calc(100% - 320px);

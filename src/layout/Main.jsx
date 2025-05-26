@@ -4,6 +4,7 @@ import MainProps from '../components/MainProps';
 import MainProps2 from '../components/MainProps2';
 import MainBlog from '../components/MainBlog';
 import MainMap from '../components/MainMap';
+import MainGallery from '../components/MainGallery';
 
 import mainImg1 from '../data/mainImg1';
 import mainImg2 from '../data/mainImg2';
@@ -45,6 +46,7 @@ const Main = () => {
       <TitleTheme title={"오시는 길"} more={"더보기 >"} />
       <MainMap />
       <TitleTheme title={"이미지 갤러리"} more={"더보기 >"} />
+      <MainGallery />
     </div>
   );
 };
