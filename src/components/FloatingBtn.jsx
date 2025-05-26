@@ -6,7 +6,7 @@ import '../assets/css/FloatingBtn.css'
 import useSideMenuStore from '../store/sideMenuStore'
 
 const FloatingBtn = () => {
-const { sideMenuOpen } = useSideMenuStore();
+  const { sideMenuOpen } = useSideMenuStore();
 
  const scrollToTop = () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
