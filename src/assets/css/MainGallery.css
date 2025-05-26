@@ -3,6 +3,7 @@
   margin-bottom: 6.1rem;
   display: flex;
   justify-content: center;
+  display: block;
 }
 
 .MainGallery .img_area {
@@ -196,4 +197,10 @@
 .MainGallery .main_gallery_btn button:hover {
   background-color: var(--color-green);
   color: var(--color-white); 
+}
+
+@media (max-width:767px) {
+  .MainGallery {
+    display: none;
+}
 }

@@ -1,0 +1,129 @@
+@media (max-width:767px) {
+  .MainProps {
+    margin-top: 1.8rem;
+  }
+  .MainProps .main_props_title {
+    margin-bottom: 30px;
+    border-bottom: none;
+    padding-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .MainProps .main_props_title > .title {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--color-black);
+    font-weight: bold;
+    position: relative;
+  }
+  .MainProps[class*="mobile_section"] .main_props_img > .img_wrap:nth-of-type(n + 3) {
+    display: none;
+  }
+  .MainProps .main_props_img > .img_wrap > .img_box {
+    width: auto;
+    max-height: 9rem;
+    overflow: hidden;
+  }
+  .MainProps .main_props_title > .title::before {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 100%;
+    background-color: var(--color-green);
+    position: absolute;
+    top: 0;
+    left: -2.1rem;
+  }
+  .MainProps.mobile_section0 > .inner {
+    padding: 0 2rem;
+  }
+  .MainProps.mobile_section0 .main_props_img  {
+    display: flex;
+    flex-direction: column;
+  }
+  .MainProps.mobile_section0 .main_props_img .txt_box {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.8rem;
+    margin-bottom: 1rem;
+  }
+  .MainProps.mobile_section0 .main_props_img .txt_box .img_name {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .MainProps.mobile_section0 .main_props_img .txt_box .img_des {
+    color: var(--color-black);
+    font-style: italic;
+    font-size: 1.1rem;
+  }
+  .MainProps.mobile_section0 .img_wrap:nth-of-type(2) .txt_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    line-height: 1.5rem;
+  }
+  .MainProps.mobile_section0 .img_wrap:nth-of-type(2) .txt_box .img_des {
+    font-size: 1rem;
+    font-style: normal;
+    color: var(--color-gray);
+  }
+
+
+
+  .MainProps.mobile_section1 .main_props_img,
+  .MainProps.mobile_section2 .main_props_img,
+  .MainProps.mobile_section3 .main_props_img,
+  .MainProps.mobile_section4 .main_props_img  {
+    display: flex;
+    gap: 1.6rem;
+  }
+  .MainProps.mobile_section1 .main_props_img > .img_wrap,
+  .MainProps.mobile_section2 .main_props_img > .img_wrap,
+  .MainProps.mobile_section3 .main_props_img > .img_wrap,
+  .MainProps.mobile_section4 .main_props_img > .img_wrap {
+    display: flex;
+    flex-direction: column;
+  }
+  .MainProps.mobile_section1 .main_props_img > .img_wrap > .img_box,
+  .MainProps.mobile_section2 .main_props_img > .img_wrap > .img_box,
+  .MainProps.mobile_section3 .main_props_img > .img_wrap > .img_box,
+  .MainProps.mobile_section4 .main_props_img > .img_wrap > .img_box {
+    max-height: 12rem;
+    line-height: none;
+  }
+  .MainProps.mobile_section1 .main_props_img > .img_wrap > .img_box > img,
+  .MainProps.mobile_section2 .main_props_img > .img_wrap > .img_box > img,
+  .MainProps.mobile_section3 .main_props_img > .img_wrap > .img_box > img,
+  .MainProps.mobile_section4 .main_props_img > .img_wrap > .img_box > img {
+    max-height: 12rem;
+  }
+  .MainProps.mobile_section1 .main_props_img .txt_box .img_name,
+  .MainProps.mobile_section2 .main_props_img .txt_box .img_name,
+  .MainProps.mobile_section3 .main_props_img .txt_box .img_name,
+  .MainProps.mobile_section4 .main_props_img .txt_box .img_name {
+    font-size: 1rem;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+  .MainProps.mobile_section1 .main_props_img .txt_box .img_des,
+  .MainProps.mobile_section2 .main_props_img .txt_box .img_des,
+  .MainProps.mobile_section3 .main_props_img .txt_box .img_des,
+  .MainProps.mobile_section4 .main_props_img .txt_box .img_des {
+    color: var(--color-black);
+    font-style: italic;
+    font-size: 1.1rem;
+  }
+  .MainProps.mobile_section1 .main_props_img .txt_box,
+  .MainProps.mobile_section2 .main_props_img .txt_box,
+  .MainProps.mobile_section3 .main_props_img .txt_box,
+  .MainProps.mobile_section4 .main_props_img .txt_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    line-height: 1.5rem;
+    padding-top: 0.8rem;
+    margin-bottom: 1rem;
+  }
+}
+  

@@ -22,6 +22,7 @@ const Main = () => {
       {mainImg1.map((section, idx) => (
         <MainProps
           key={idx}
+          pageKey={`section${idx}`}
           title={section.title}
           img1={section.items[0]?.img}
           name1={section.items[0]?.name}
@@ -45,7 +46,6 @@ const Main = () => {
       <MainBlog />
       <TitleTheme title={"오시는 길"} more={"더보기 >"} />
       <MainMap />
-      <TitleTheme title={"이미지 갤러리"} more={"더보기 >"} />
       <MainGallery />
     </div>
   );

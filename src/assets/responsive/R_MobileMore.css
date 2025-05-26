@@ -1,0 +1,17 @@
+.MobileMore {
+  display: none;
+}
+
+@media (max-width:767px) {
+  .MobileMore {
+    display: block;
+    border-bottom: 7px solid #ccc;
+  }
+  .MobileMore p {
+    color: #ccc;
+    text-align: center;
+    margin-top: 1.3rem;
+    padding: 1.3rem 0;
+    border-top: 1px solid var(--color-lightgray);
+  } 
+}

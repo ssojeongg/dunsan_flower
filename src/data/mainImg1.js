@@ -27,7 +27,7 @@ const mainImg1 = [
     title: "꽃다발",
     items: [
       { img: main2_1, name: "프리져브드 유리구드", des: "50,000원" },
-      { img: main2_2, name: "프리져브드 유리구드", des: "50,000" },
+      { img: main2_2, name: "프리져브드 유리구드", des: "50,000원" },
       { img: main2_3, name: "꽃다발(4)", des: "30,000원" }
     ]
   },

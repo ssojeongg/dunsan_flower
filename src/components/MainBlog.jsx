@@ -1,6 +1,10 @@
 import '../assets/css/MainBlog.css'
+import '../assets/responsive/R_MainBlog.css'
 
 import mainBlogData from '../data/mainBlogData'
+import MobileMore from './MobileMore'
+
+import blogLogo from '../assets/img/bloglogo.png'
 
 const MainBlog = () => {
   return (
@@ -20,17 +24,24 @@ const MainBlog = () => {
                       ))}
                   </div>
                   </div>
-                <img src={item.image} alt={item.title} />
+                <img className='content_img' src={item.image} alt={item.title} />
                 </div>
                 <div className="blog_des">
-                  <p className="name">{item.blogName}</p>
+                  <div className="blog_tit_area">
+                    <div className="blog_logo_area">
+                      <img className='blog_logo' src={blogLogo} />
+                    </div>
+                    <p className="name">{item.blogName}</p>
+                    <p className="mobile_name">sunja456123</p>
+                  </div>
                   <small>{item.date}</small>
                 </div>
               </div>
           ))}
-            </div>
+          </div>
         </div>
       </div>
+      <MobileMore />
     </div>
   )
 }

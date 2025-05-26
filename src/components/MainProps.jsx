@@ -1,11 +1,17 @@
 import '../assets/css/MainProps.css';
+import '../assets/responsive/R_MainProps.css'
+
+import useIsMobile from '../assets/hooks/useIsMobile';
 
 import useSideMenuStore from '../store/sideMenuStore'
+import MobileMore from './MobileMore';
 
-const MainProps = ({title, name1, img1, des1, name2, img2, small, des2, name3, img3, des3}) => {
+
+const MainProps = ({pageKey, title, name1, img1, des1, name2, img2, small, des2, name3, img3, des3}) => {
   const { sideMenuOpen } = useSideMenuStore();
+  const isMobile = useIsMobile();
   return (
-    <div className={`MainProps ${sideMenuOpen ? 'width' : ''}`}>
+    <div className={`MainProps ${sideMenuOpen ? 'width' : ''}${isMobile ? `mobile_${pageKey}` : ''}`}>
       <div className="inner">
         <div className="main_props_title">
           <p className='title'>{title}</p>
@@ -42,6 +48,7 @@ const MainProps = ({title, name1, img1, des1, name2, img2, small, des2, name3, i
           </div>
         </div>
       </div>
+      <MobileMore />
     </div>
   )
 }

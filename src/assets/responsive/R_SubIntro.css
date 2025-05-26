@@ -1,0 +1,43 @@
+@media (max-width:767px) {
+  .SubIntro .intro_img_area .img_box img {
+    height: auto;
+  }
+  .SubIntro .thumbSwiper {
+    background-color: var(--color-lightgray);
+    gap: 0;
+    justify-content: left;
+  }
+  .SubIntro .thumbSwiper .thumbnail_img_box {
+    justify-content: left;
+    gap: 0;
+    width: auto;
+    height: auto;
+  }
+  .SubIntro .thumbSwiper img {
+    max-width: 50px;
+    height: 50px;
+  }
+  .active {
+    border: 2px solid var(--color-green);
+  } 
+  .btn_area {
+    margin-top: 0.5rem;
+    margin-bottom: 0.7rem;
+  }
+  .btn {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 1rem;
+  }
+  .sub_intro_img {
+    margin-top: 0.7rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  .sub_intro_img img {
+    width: calc(50% - 0.5rem);
+    height: auto;
+  }
+}

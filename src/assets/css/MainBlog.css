@@ -23,6 +23,9 @@
   padding: 40px 40px 45px;
   height: auto;
 }
+ .MainBlog .blog_card_wrap .card_bg .content_img {
+    display: block;
+  }  
 .MainBlog .blog_card_wrap .card_bg .card_box .card_txt {
   height: 220px;
 }
@@ -49,4 +52,13 @@
 .MainBlog .blog_card_wrap h3, .content, .hashtags {
   font-size: 0.9rem;
   line-height: 1.5rem;
+}
+.blog_des .blog_logo {
+  display: none;
+}
+.mobile_name {
+  display: none;
+}
+.name {
+  display: block;
 }

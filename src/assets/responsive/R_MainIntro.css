@@ -1,0 +1,9 @@
+@media (max-width:767px) {
+  .MainIntro .main_intro_video {
+    max-height: 200px;
+  }
+  iframe {
+  width: 100%;
+  height: 200px;
+}
+}

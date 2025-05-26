@@ -1,6 +1,8 @@
 import '../assets/css/MainProps2.css';
+import '../assets/responsive/R_MainProps2.css'
 
 import useSideMenuStore from '../store/sideMenuStore'
+import MobileMore from './MobileMore';
 
 const MainProps2 = ({title, name1, img1, name2, img2}) => {
   const { sideMenuOpen } = useSideMenuStore();
@@ -30,6 +32,7 @@ const MainProps2 = ({title, name1, img1, name2, img2}) => {
           </div>
         </div>
       </div>
+      <MobileMore />
     </div>
   )
 }

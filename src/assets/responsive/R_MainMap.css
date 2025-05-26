@@ -1,0 +1,39 @@
+@media (max-width: 767px) {
+  .MainMap {
+    width: 100%;
+    padding: 0;
+  }
+
+  .MainMap > .inner > .map_area {
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+  }
+
+  .MainMap > .inner > .map_area > .map_address,
+  .MainMap > .inner > .map_area > .map_time,
+  .MainMap > .inner > .map_area > .map_tel {
+    border-top: none;
+    padding-top: 1rem;
+  }
+  .MainMap > .inner > .map_area > .map_time,
+  .MainMap > .inner > .map_area > .map_tel {
+    flex-direction: column;
+  }
+  .MainMap > .inner > .map_area > .map_address p {
+    font-weight: bold;
+  }
+  .MainMap > .inner > .map_area > .map_address h2:nth-of-type(2) {
+    color: var(--color-gray) !important;
+    font-size: 1rem;
+  }
+  
+
+  .MainMap > .inner > .map_area > .map_address .map_btn {
+    display: none !important;
+  }
+  .MainMap > .inner > .map_area .map_tel p svg,
+  .MainMap > .inner > .map_area .map_time p svg {
+    display: none;
+  }
+}

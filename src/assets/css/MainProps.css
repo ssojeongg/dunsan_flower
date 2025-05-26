@@ -23,7 +23,7 @@
 .MainProps .main_props_img {
   display: flex;
   justify-content: space-between;
-  height: 338px;
+  /* height: 338px; */
 }
 .MainProps .main_props_img > .img_box {
   display: flex;

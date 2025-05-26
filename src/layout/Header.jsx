@@ -1,12 +1,15 @@
 import '../assets/css/Header.css';
+import '../assets/responsive/R_Header.css'
 
 import menus from '../data/menu';
 import logo from '../assets/img/logo.jpeg';
 
+import { FaPhone, FaMapMarkerAlt } from "react-icons/fa";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPen, faGift, faB, faXmark } from '@fortawesome/free-solid-svg-icons';
+
 import useSideMenuStore from '../store/sideMenuStore';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faXmark } from '@fortawesome/free-solid-svg-icons';
 
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
@@ -45,10 +48,12 @@ const Header = () => {
     <div className={sideMenuOpen ? 'Header width' : 'Header'}>
       <div className={`header_gnb ${scrollPosition >= 100 ? 'change' : ''} ${sideMenuOpen ? 'shift' : ''}`}>
         <div className="header_gnb_inner">
-          <div className="header_nav">
-            <p onClick={goToMain} className={selectedMenu && selectedMenu !== 1 ? 'logo show' : 'logo'}>
+          <p>☰</p>
+          <p onClick={goToMain} className={selectedMenu && selectedMenu !== 1 ? 'logo show' : 'logo'}>
               대전꽃배달 둔산플라워
-            </p>
+          </p>
+          <div className="header_nav">
+            <ul>
             {menus.map((item) => (
               <li
                 key={item.id}
@@ -61,6 +66,7 @@ const Header = () => {
                 {item.title}
               </li>
             ))}
+            </ul>
           </div>
           <div className="header_menu">
             <ul>
@@ -82,6 +88,40 @@ const Header = () => {
             <div className="site_sub">
               <p className="site_name">대전꽃배달 둔산플라워</p>
               <p className="site_des">대전꽃배달 서구꽃배달 둔산동꽃배달 전국꽃배달 화환</p>
+            </div>
+            <div className="site_icon">
+              <div className="site_buttons">
+                <button className="site_item">
+                  <div className="site_img_box">
+                    <FaPhone />
+                  </div>
+                    <span className="site_text">대표번호</span>
+                </button>
+                <button className="site_item">
+                  <div className="site_img_box">
+                    <FaMapMarkerAlt />
+                  </div>  
+                    <span className="site_text">오시는길</span>
+                </button>
+                  <button className="site_item">
+                    <div className="site_img_box">
+                    <FontAwesomeIcon icon={faPen} />
+                  </div>
+                  <span className="site_text">포스트</span>
+                </button>
+                <button className="site_item">
+                  <div className="site_img_box">
+                    <FontAwesomeIcon icon={faGift} />
+                  </div>
+                  <span className="site_text">쇼핑몰</span>
+                </button>
+                <button className="site_item">
+                  <div className="site_img_box">
+                    <FontAwesomeIcon icon={faB} />
+                  </div>
+                  <span className="site_text">블로그</span>
+                </button> 
+              </div>
             </div>
           </div>
         </div>

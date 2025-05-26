@@ -1,0 +1,116 @@
+@media (max-width: 767px) {
+  .change {
+    background-color: var(--color-green);
+    border-bottom: none !important;
+    max-height: 3rem;
+    padding-bottom: 0.5rem;
+  }
+  .change * {
+  color: var(--color-white) !important;
+
+}
+  .inner {
+    padding: 0 2rem;
+  }
+  .Header .header_gnb * {
+    border-bottom: none;
+    background-color: var(--color-green);
+    max-height: 3rem;
+    /* padding-bottom: 0.5rem; */
+    color: var(--color-white) !important;
+  }
+  .Header .header_gnb {
+    border-bottom: none;
+  }
+  .header_gnb_inner {
+    padding: 2rem;
+    max-height: 3rem;
+  
+  }
+  .header_gnb_inner > p {
+    margin-right: 1.5rem;
+  }
+  .header_nav {
+    overflow-x: auto;
+    max-width: 330px;
+  }
+  .header_menu {
+    display: none;
+  }
+  .Header .header_gnb_inner > p:first-of-type {
+    display: block;
+    font-size: 1.5rem;
+  }
+  .Header .header_gnb_inner .header_nav ul {
+    display: flex;
+    gap: 0;
+  }
+ .Header .header_gnb_inner .header_nav li {
+    width: 5rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #ccc;
+    padding: 0.5rem 0;
+  }
+
+  .Header .header_bg {
+    background-size: cover;
+    background-position:top;  
+    height: 336px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/bg.jpeg);
+    border-bottom: 7px solid #ccc;
+  }
+  .Header .site_info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .Header .site_info img {
+    width: 5.7rem;
+    height: 5.7rem;
+  }
+  .Header .site_info .site_sub {
+    line-height: 1.4rem;
+  }
+  .Header .site_info .site_sub .site_des {
+    color: #ccc;
+  }
+  .site_icon {
+    display: block;
+  }
+  .site_icon .site_buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .site_icon .site_buttons .site_item  {
+    background: none;
+    border: none;
+    color: var(--color-white);
+  }
+  .site_icon .site_buttons .site_img_box {
+    border-radius: 50%;
+    background-color: var(--color-green);
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  .site_icon .site_buttons .site_item .site_text {
+    color: var(--color-lightgray);
+  }
+  
+
+  .green {
+    color: var(--color-white) !important;
+    border-bottom: none;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .logo {
+    display: none;
+  }
+}

@@ -1,9 +1,11 @@
 import NaverMap from "./NaverMap"
 
 import '../assets/css/MainMap.css'
+import '../assets/responsive/R_MainMap.css'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot, faDiamondTurnRight, faClock, faPhone, faUser, faCircleExclamation } from '@fortawesome/free-solid-svg-icons';
+import MobileMore from "./MobileMore";
 
 
 const MainMap = () => {
@@ -24,14 +26,14 @@ const MainMap = () => {
             </div>
           </div>
           <div className="map_tel">
-            <p><FontAwesomeIcon color="#ccc" icon={faPhone} />&nbsp;&nbsp;전화번호</p>
+            <p><FontAwesomeIcon color="#ccc" icon={faPhone} />전화번호</p>
             <ul>
               <li>0507-1455-6771</li>
               <li>010-6788-6771</li>
             </ul>
           </div>
           <div className="map_time">
-            <p><FontAwesomeIcon color="#ccc" icon={faClock} />&nbsp;&nbsp;이용시간</p>
+            <p><FontAwesomeIcon color="#ccc" icon={faClock} />이용시간</p>
             <p className='gray'>매일</p>
             <ul>
               <li>09:00~20:00</li>
@@ -40,6 +42,7 @@ const MainMap = () => {
           </div>
         </div>
       </div>
+      <MobileMore />
     </div>
   )
 }

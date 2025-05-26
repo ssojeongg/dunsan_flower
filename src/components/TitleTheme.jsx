@@ -1,4 +1,5 @@
 import '../assets/css/TitleTheme.css'
+import '../assets/responsive/R_TitleTheme.css'
 
 const TitleTheme = ({title, more}) => {
   return (

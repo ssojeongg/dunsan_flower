@@ -68,7 +68,6 @@
 .MainMap > .inner > .map_area > .map_address  h2 {
   font-size: 2rem;
   font-weight: normal;
-  color: var(--color-blue)
 }
 .map_address, .map_time, .map_tel {
   width: 100%;
@@ -101,4 +100,8 @@
  width: 28rem;
  text-align: right;
  color: var(--color-gray);
+}
+.MainMap > .inner > .map_area .map_tel p svg,
+.MainMap > .inner > .map_area .map_time p svg {
+  padding-right: 0.3rem;   
 }
