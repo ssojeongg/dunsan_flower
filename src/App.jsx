@@ -1,6 +1,7 @@
 import './assets/css/App.css'
 import Header from './layout/Header'
 import Main from './layout/Main'
+import FloatingBtn from './components/FloatingBtn'
 import Footer from './layout/Footer'
 import SubMap from './pages/SubMap'
 import SubBlog from './pages/SubBlog'
@@ -24,6 +25,7 @@ function App() {
         <Route path='/sub/9' element={<SubBlog />} />
         <Route path='/sub/10' element={<SubMap />} />
       </Routes>
+      <FloatingBtn />
       <Footer />
       </div>
     </BrowserRouter>
