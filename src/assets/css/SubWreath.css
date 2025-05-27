@@ -14,3 +14,9 @@
   font-weight: bold;
   padding: 1rem 0;
 }
+@media (max-width:767px) {
+  .SubWreath {
+    padding-bottom: 2.1rem;
+    border-bottom: 7px solid #ccc;
+  }
+}

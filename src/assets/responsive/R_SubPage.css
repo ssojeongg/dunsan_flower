@@ -1,4 +1,8 @@
 @media (max-width:767px) {
+  .Subpage {
+    padding-bottom: 2.1rem;
+    border-bottom: 7px solid #ccc;
+  }
   .Subpage.mobile_3 .subpage_img > .img_wrap > .img_box {
     width: auto;
     height: auto;
