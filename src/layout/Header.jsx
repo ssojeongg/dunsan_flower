@@ -46,7 +46,7 @@ const Header = () => {
 
   return (
     <div className={sideMenuOpen ? 'Header width' : 'Header'}>
-      <div className={`header_gnb ${scrollPosition >= 100 ? 'change' : ''} ${sideMenuOpen ? 'shift' : ''}`}>
+      <div className={`header_gnb ${scrollPosition >= 100 ? 'change' : ''} ${sideMenuOpen ? 'shift' : ''} ${selectedMenu !== null && selectedMenu !== 1 ? 'bg_change' : ''}`}>
         <div className="header_gnb_inner">
           <p>☰</p>
           <p onClick={goToMain} className={selectedMenu && selectedMenu !== 1 ? 'logo show' : 'logo'}>

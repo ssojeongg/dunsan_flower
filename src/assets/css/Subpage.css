@@ -52,3 +52,18 @@
   width: 100%;
   height: 100%;
 }
+.Subpage .txt_box .top_row {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.Subpage .txt_box .img_name,
+.Subpage .txt_box .img_price {
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0;
+}

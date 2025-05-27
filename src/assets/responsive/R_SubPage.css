@@ -1,0 +1,89 @@
+@media (max-width:767px) {
+  .Subpage.mobile_3 .subpage_img > .img_wrap > .img_box {
+    width: auto;
+    height: auto;
+  }
+  .Subpage.mobile_3 .subpage_img > .img_wrap:nth-of-type(1) > .img_box,
+  .Subpage.mobile_3 .subpage_img > .img_wrap:nth-of-type(3) > .img_box{  
+    max-height:160px;
+  }
+  .Subpage.mobile_3 .txt_box .img_price {
+    font-style: italic;
+    font-size: 1.3rem;
+    text-align: right;
+  }
+  .Subpage.mobile_3 .txt_box .img_name, .Subpage .txt_box .img_price  {
+    color: var(--color-black);
+  }
+  .mobile_3 .img_price {
+    display: block !important;
+  }
+  .Subpage.mobile_3 .txt_box {
+    padding: 0;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .Subpage.mobile_3 .txt_box .top_row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: row;
+  }
+  .Subpage.mobile_3 .txt_box .img_name {
+    font-weight: bold;
+  }
+  .Subpage.mobile_3 .txt_box .img_name,
+  .Subpage.mobile_3 .txt_box .img_price {
+    font-size: 1rem;
+    margin: 0;
+    color: var(--color-black);
+  }
+  .Subpage.mobile_3 .txt_box .img_des {
+    margin-bottom: 0;
+  }
+  .Subpage.mobile_3 .subpage_img .img_wrap:first-of-type .top_row  {
+    display: flex;
+    flex-direction: row;
+  }
+  .Subpage.mobile_3 .txt_box .top_row {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .Subpage.mobile_3 .subpage_img .img_wrap:nth-of-type(n+3) {
+    width: 45%;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .Subpage.mobile_3 .subpage_img .img_wrap:nth-of-type(n+3) img {
+    height: 195px;
+  }
+  .Subpage.mobile_common .subpage_img .img_wrap {
+    width: 45%;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+
+  .Subpage.mobile_common .subpage_img > .img_wrap > .img_box {
+      width: auto;
+      height: auto;
+  }
+  .Subpage.Subpage.mobile_common .subpage_img .img_wrap img {
+    height: 195px;
+  }
+  .Subpage.mobile_common .txt_box {
+    padding-top: 0;
+  }
+  .Subpage.mobile_common .txt_box .img_name {
+    font-size: 1rem;
+    margin: 0;
+    color: var(--color-black);
+    font-weight: bold;
+  }
+  .Subpage.mobile_common .txt_box .img_price {
+    font-style: italic;
+  }
+}
+

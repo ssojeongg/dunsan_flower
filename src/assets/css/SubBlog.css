@@ -1,11 +1,11 @@
-.MainBlog {
+.SubBlog {
   width: 100vw;
   margin-bottom: 6.1rem;
 }
-.MainBlog.width {
+.SubBlog.width {
   width: calc(100% - 320px);
 }
-.MainBlog .blog_card_wrap .card_area {
+.SubBlog .blog_card_wrap .card_area {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -14,43 +14,43 @@
   display: flex;
   flex-wrap: wrap;
 }
-.MainBlog .blog_card_wrap .card_bg {
+.SubBlog .blog_card_wrap .card_bg {
   width: 353px;
   height: auto;
   /* overflow: hidden; */
 }
-.MainBlog .blog_card_wrap .card_bg .card_box {
+.SubBlog .blog_card_wrap .card_bg .card_box {
   background-color: #fafafa;
   padding: 40px 40px 45px;
   height: auto;
 }
- .MainBlog .blog_card_wrap .card_bg .content_img {
+ .SubBlog .blog_card_wrap .card_bg .content_img {
     display: block;
   }  
-.MainBlog .blog_card_wrap .card_bg .card_box .card_txt {
+.SubBlog .blog_card_wrap .card_bg .card_box .card_txt {
   height: 220px;
 }
-.MainBlog .blog_card_wrap .card_bg img {
+.SubBlog .blog_card_wrap .card_bg img {
   width: 100%;
   height: auto;
 }
-.MainBlog .blog_card_wrap .card_bg .blog_des {
+.SubBlog .blog_card_wrap .card_bg .blog_des {
   display: flex;
   align-items: center;
   gap: 1.5rem;
   margin: 1.5rem 0;
 }
-.MainBlog .blog_card_wrap h3 {
+.SubBlog .blog_card_wrap h3 {
   padding-bottom: 1rem;
   font-size: 1rem;
 }
-.MainBlog .blog_card_wrap .hashtags {
+.SubBlog .blog_card_wrap .hashtags {
   padding-bottom: 1.5rem;
 }
-.MainBlog .blog_card_wrap small {
+.SubBlog .blog_card_wrap small {
   color: var(--color-gray);
 }
-.MainBlog .blog_card_wrap h3, .content, .hashtags {
+.SubBlog .blog_card_wrap h3, .content, .hashtags {
   font-size: 0.9rem;
   line-height: 1.5rem;
 }
