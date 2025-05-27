@@ -58,8 +58,8 @@
   }
 
   /* 선택된 li(green 클래스)에만 적용 */
-  .Header .header_gnb_inner .header_nav li.green {
-    color: var(--color-white);
+  .green {
+    color: var(--color-white) !important;
     text-decoration: underline;
     text-underline-offset: 3px;
   }
