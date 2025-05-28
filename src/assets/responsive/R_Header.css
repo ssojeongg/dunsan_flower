@@ -290,7 +290,7 @@
   .show_area {
     display: none;
     background-color: #f8f9fa;
-    padding: 1.5rem;
+    padding: 1.5rem 1.5rem 0.7rem;
     border-top: 1px solid #e9ecef;
     /* animation: slideDown 0.3s ease-in-out; */
   }
@@ -312,8 +312,7 @@
     gap: 0.8rem;
     color: var(--color-gray);
     padding: 0.8rem 0;
-    border-bottom: 1px solid #e9ecef;
-    margin-bottom: 1rem;
+    border-bottom: none;
   }
   
   .show_area > ul:last-of-type {
@@ -331,20 +330,20 @@
 
   .show_area > ul:last-of-type li:last-child {
     border-bottom: none;
+    padding: 0;
   }
   
   .show_area .hide_area {
     text-align: center;
-    padding-top: 1.5rem;
-    border-top: 1px solid #e9ecef;
+    border-top: none;
   }
   
   .show_area .hide_area p {
-    color: var(--color-gray);
+    color: #ccc;
     font-size: 0.8rem;
     margin: 0;
     cursor: pointer;
-    padding: 0.5rem;
+    padding-top: 0.5rem;
     transition: color 0.3s ease;
   }
 
