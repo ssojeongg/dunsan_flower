@@ -43,7 +43,7 @@ const Header = () => {
 
   const goToMain = () => {
     setSelectedMenu(null); // 메인일 경우 선택 메뉴 해제
-    navigate('/dunsan_flower/');
+    navigate('/');
   };
 
   const handleShowClick = () => {

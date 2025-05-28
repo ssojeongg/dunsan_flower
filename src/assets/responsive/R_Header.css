@@ -256,6 +256,9 @@
   .Header .mob_logo_area .icon_area p:last-child {
     border: none;
   }
+  .bold {
+    color:var(--color-black);
+  }
 
   /* 플로팅 버튼 영역 수정 */
   .Header .click_area {
@@ -289,10 +292,10 @@
     background-color: #f8f9fa;
     padding: 1.5rem;
     border-top: 1px solid #e9ecef;
-    animation: slideDown 0.3s ease-in-out;
+    /* animation: slideDown 0.3s ease-in-out; */
   }
 
-  @keyframes slideDown {
+  /* @keyframes slideDown {
     from {
       opacity: 0;
       transform: translateY(-10px);
@@ -301,7 +304,7 @@
       opacity: 1;
       transform: translateY(0);
     }
-  }
+  } */
   
   .show_area .show_des_area {
     display: flex;
