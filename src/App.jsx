@@ -61,12 +61,12 @@ const SwipeHandler = ({ children }) => {
 // App 컴포넌트
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/dunsan_flower/'>
       <SwipeHandler>
         <div className="App">
           <Header />
           <Routes>
-            <Route path="/dunsan_flower/" element={<Main />} />
+            <Route path="/" element={<Main />} />
             <Route path="/sub/1" element={<Main />} />
             <Route path="/sub/2" element={<SubIntro />} />
             <Route path="/sub/8" element={<SubWreath />} />

@@ -4,6 +4,7 @@ import '../assets/responsive/R_Header.css'
 import menus from '../data/menu';
 import logo from '../assets/img/logo.jpeg';
 
+import { Link } from "react-router-dom";
 import { FaPhone, FaMapMarkerAlt } from "react-icons/fa";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPen, faGift, faB, faXmark, faPhone, faCircleExclamation, faPowerOff,faArrowUpFromBracket, faMessage } from '@fortawesome/free-solid-svg-icons';
@@ -51,6 +52,10 @@ const Header = () => {
   const handleHideClick = () => {
     setShow(false);
   }
+  
+  const handleCallClick = () => {
+    window.location.href = 'tel:0507-1455-6771';
+  };
 
   return (
     <div className={sideMenuOpen ? 'Header width' : 'Header'}>
@@ -99,36 +104,40 @@ const Header = () => {
             </div>
             <div className="site_icon">
               <div className="site_buttons">
-                <button className="site_item">
+                <button className="site_item" onClick={handleCallClick}>
                   <div className="site_img_box">
                     <FaPhone />
                   </div>
-                    <span className="site_text">대표번호</span>
+                    <span className="site_text">전화</span>
                 </button>
-                <button className="site_item">
-                  <div className="site_img_box">
-                    <FaMapMarkerAlt />
-                  </div>  
-                    <span className="site_text">오시는길</span>
+                  <Link to="/sub/10">
+                <button className="site_item" onClick={() => setIsFabOpen(false)}>
+                    <div className="site_img_box">
+                      <FaMapMarkerAlt />
+                    </div>  
+                      <span className="site_text">오시는길</span>
                 </button>
-                  <button className="site_item">
+                  </Link>
+                  <button className="site_item" onClick={() => { window.open("https://blog.naver.com/an-news/223733586157"); setIsFabOpen(false); }}>
                     <div className="site_img_box">
                     <FontAwesomeIcon icon={faPen} />
                   </div>
                   <span className="site_text">포스트</span>
                 </button>
-                <button className="site_item">
+                <button className="site_item" >
                   <div className="site_img_box">
                     <FontAwesomeIcon icon={faGift} />
                   </div>
                   <span className="site_text">쇼핑몰</span>
                 </button>
+                  <Link to="/sub/9">
                 <button className="site_item">
-                  <div className="site_img_box">
-                    <FontAwesomeIcon icon={faB} />
-                  </div>
-                  <span className="site_text">블로그</span>
+                    <div className="site_img_box">
+                      <FontAwesomeIcon icon={faB} />
+                    </div>
+                    <span className="site_text">블로그</span>
                 </button> 
+                  </Link>
               </div>
             </div>
           </div>
@@ -164,7 +173,7 @@ const Header = () => {
                 <p><FontAwesomeIcon icon={faPowerOff} className='fab'/>로그인</p>
                 <p><FontAwesomeIcon icon={faArrowUpFromBracket} className='fab' />공유하기</p>
                 <p><FontAwesomeIcon icon={faMessage} className='fab' />톡톡하기</p>
-                <p><FaPhone className='fab' />전화하기</p>
+                <p onClick={handleCallClick}><FaPhone className='fab' />전화하기</p>
               </div>
               <div className="click_area">
                 <div className="show_btn_area">
