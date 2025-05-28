@@ -1,6 +1,163 @@
-@media (max-width:767px) {
-  .fab_pc_container.width {
-    right: 2rem;
-    left: auto;
+@media (max-width: 767px) {
+  .fab_container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    z-index: 1000;
   }
+  
+  /* 더보기 버튼 */
+  .fab_main {
+    width: 50px;
+    height: 50px;
+    background-color: var(--color-green);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  /* 추가 버튼 컨테이너 */
+  .fab_buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+    position: absolute;
+    bottom: 60px;
+    right: 0;
+  }
+  
+  /* 개별 버튼 */
+  .fab_item {
+    width: 50px;
+    height: 50px;
+    background-color:var(--color-green);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+  }
+  
+  .fab_item .fab_text {
+    display: block;
+    position: absolute;
+    right: 60px;
+    bottom: 15px;
+    color: #000;
+    font-weight: bold;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+  .fab_container {
+    display: block;
+  }
+  .fab_buttons {
+    position: fixed;
+    bottom: 80px;
+    right: 20px; /* ← right: 0 이 아니라 20px로 고정 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+ 
+  .fab_item {
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+    transform: translateY(2rem);
+    transition: opacity 0.1s ease, transform 0.05s ease;
+  }
+  .fab_buttons.show {
+    right: 0rem;
+  }
+  .fab_buttons.show .fab_item {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+  .fab_buttons.close .fab_item {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  .fab_icon {
+    font-size: 22px;
+    padding-left: 8px;
+  }
+  .fab_more {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--color-green);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 1001;
+  }
+  
+  .fab_main {
+    display: block;
+    padding-top: 5px;
+  }
+  .fab_top {
+    display: none;
+  }
+
+
+  .fab_pc_container {
+    display: none;
+  }
+
+  .fab_buttons.show .fab_item:nth-child(1) { transition-delay: 0.07s; }
+  .fab_buttons.show .fab_item:nth-child(2) { transition-delay: 0.05s; }
+  .fab_buttons.show .fab_item:nth-child(3) { transition-delay: 0.03s; }
+  .fab_buttons.show .fab_item:nth-child(4) { transition-delay: 0.01s; }
+  .fab_buttons.show .fab_item:nth-child(5) { transition-delay: 0s; }
+
+
+  .fab_buttons.close .fab_item:nth-child(5) { transition-delay: 0.07s; }
+  .fab_buttons.close .fab_item:nth-child(4) { transition-delay: 0.05s; }
+  .fab_buttons.close .fab_item:nth-child(3) { transition-delay: 0.03s; }
+  .fab_buttons.close .fab_item:nth-child(2) { transition-delay: 0.01s; }
+  .fab_buttons.close .fab_item:nth-child(1) { transition-delay: 0s; }
+
+
+  .fab_overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.764);
+  backdrop-filter: blur(7px);
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.fab_overlay.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 }

@@ -137,3 +137,6 @@
   align-items: center;
   flex-direction: column;
 }
+.fab_overlay {
+  opacity: 0;
+}
