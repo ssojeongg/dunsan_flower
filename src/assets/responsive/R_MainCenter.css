@@ -1,0 +1,175 @@
+.MainCenter {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .MainCenter {
+    display: block;
+    padding-bottom: 2.1rem;
+    border-bottom: 7px solid #ccc;
+  }
+
+  .MainCenter .first_img_box {
+    display: flex;
+    gap: 5px;
+  }
+
+  .MainCenter .first_img_box img {
+    width: 201px;
+    height: 155px;
+    object-fit: cover;
+  }
+
+  .MainCenter .right_img_box {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .MainCenter .right_img_box img {
+    width: 103px;
+    height: 75px;
+    object-fit: cover;
+  }
+
+  .MainCenter .right_img_box::after {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: inline-block;
+    content: '116';
+    width: 40px;
+    height: 25px;
+    background-color: #000000b1;
+    color: white;
+    z-index: 3;
+    text-align: center;
+    line-height: 25px;
+    font-size: 12px;
+  }
+
+  .MainCenter .second_img_box {
+    display: none;
+  }
+
+  .MainCenter .second_img_box.show {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    z-index: 9999;
+    padding: 4rem 0 5rem; /* 상단 메뉴, 하단 여백 확보 */
+    box-sizing: border-box;
+    align-content: flex-start;
+  }
+
+  .MainCenter .second_img_box .img_box {
+    width: calc(100% / 3);
+    box-sizing: border-box;
+    padding: 0 2px;
+  }
+
+  .MainCenter .second_img_box .img_box img {
+    width: 100%;
+    height: 116px;
+    object-fit: cover;
+  }
+
+  .MainCenter .second_img_box .btn_img_area {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 10001;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .MainCenter .second_img_box .close_btn {
+    width: auto;
+    height: 30px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .MainCenter .second_img_box .close_btn p {
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .MainCenter .bottom_info_area {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1rem;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    box-sizing: border-box;
+    z-index: 10001;
+  }
+
+  .info_left {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .info_left button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  .info_right {
+    color: white;
+    font-size: 1rem;
+  }
+
+  /* 상세 이미지 보기 */
+  .detail_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000; /* 상단 버튼과 bottom_info_area 아래에 위치 */
+  }
+
+  .detail_img_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .detail_img_container img {
+    width: 100%;
+    height: 250px;
+  }
+}

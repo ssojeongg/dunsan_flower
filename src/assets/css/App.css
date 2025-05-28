@@ -28,7 +28,7 @@ body {
 .inner {
   max-width: 1100px;
   margin: 0 auto;
-  overflow-x: hidden;
+  touch-action: pan-y;
 }
 button {
   cursor: pointer;

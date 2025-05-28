@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import TitleTheme from '../components/TitleTheme';
 import MainIntro from '../components/MainIntro';
 import MainProps from '../components/MainProps';
@@ -12,11 +13,25 @@ import mainImg2 from '../data/mainImg2';
 import useSideMenuStore from '../store/sideMenuStore';
 
 import '../assets/css/Main.css'
+import MainCenter from '../components/MainCenter';
 
 const Main = () => {
   const { sideMenuOpen } = useSideMenuStore();
+
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 767);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 767);
+    };
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
     <div className={`Main ${sideMenuOpen ? 'width' : ''}`}>
+      {isMobile && <TitleTheme title={"대전중심에 있는 꽃집"} />}
+      <MainCenter />
       <TitleTheme title={"꽃매장 소개"} more={"더보기 >"} />
       <MainIntro />
       {mainImg1.map((section, idx) => (
@@ -42,7 +57,7 @@ const Main = () => {
         img2={mainImg2.items[1].img}
         name2={mainImg2.items[1].name}
       />
-      <TitleTheme title={"블로그"} more={"더보기 >"}/>
+      <TitleTheme title={"블로그"} more={"더보기 >"} />
       <MainBlog />
       <TitleTheme title={"오시는 길"} more={"더보기 >"} />
       <MainMap />
