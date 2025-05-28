@@ -2,6 +2,7 @@ import { FaPhone, FaMapMarkerAlt, FaChevronUp } from "react-icons/fa";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPen, faGift, faB } from '@fortawesome/free-solid-svg-icons';
 import '../assets/css/FloatingBtn.css'
+import '../assets/responsive/R_FloatingBtn.css'
 
 import useSideMenuStore from '../store/sideMenuStore'
 

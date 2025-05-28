@@ -163,7 +163,7 @@
   color: var(--color-gray);
 }
 .black {
-  color: #000;
+  color:var(--color-black);
 }
 .header_dummy.none {
  margin-bottom: 5rem;
@@ -184,4 +184,7 @@
 }
 .site_icon {
   display: none;
+}
+.Header .mob_logo_area {
+  display: none;    
 }

@@ -18,5 +18,9 @@
   .SubWreath {
     padding-bottom: 2.1rem;
     border-bottom: 7px solid #ccc;
+    margin: 0;
+  }
+  .SubWreath.width {
+    width: 100%;
   }
 }

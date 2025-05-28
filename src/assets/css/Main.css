@@ -6,3 +6,9 @@
 .Main.width {
   width: calc(100% - 320px);
 }
+
+@media (max-width:767px) {
+  .Main.width {
+    width: 100%;
+  }
+}

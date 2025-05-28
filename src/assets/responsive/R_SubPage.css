@@ -3,6 +3,9 @@
     padding-bottom: 2.1rem;
     border-bottom: 7px solid #ccc;
   }
+  .Subpage.mobile_3 {
+    padding-bottom: 3.5rem;
+  }
   .Subpage.mobile_3 .subpage_img > .img_wrap > .img_box {
     width: auto;
     height: auto;
@@ -26,6 +29,9 @@
     padding: 0;
     width: 100%;
     flex-direction: column;
+  }
+  .Subpage.width {
+    width: 100%;
   }
 
   .Subpage.mobile_3 .txt_box .top_row {
@@ -88,6 +94,12 @@
   }
   .Subpage.mobile_common .txt_box .img_price {
     font-style: italic;
+  }
+  .Subpage.mobile_3 {
+    margin: 0;
+  }
+  .Subpage.mobile_common {
+    margin: 0;
   }
 }
 

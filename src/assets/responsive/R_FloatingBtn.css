@@ -1,0 +1,6 @@
+@media (max-width:767px) {
+  .fab_pc_container.width {
+    right: 2rem;
+    left: auto;
+  }
+}

@@ -2,6 +2,7 @@
   .SubBlog {
     width: 100%;
     margin-top: 0;
+    margin: 0;
   }
   .SubBlog .blog_card_wrap .card_area {
     flex-direction: column;

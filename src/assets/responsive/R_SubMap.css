@@ -36,4 +36,7 @@
     font-weight: normal;
     font-size: 0.9rem;
   }
+  .SubMap.width {
+    width: 100%;
+  }
 }

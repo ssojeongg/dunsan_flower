@@ -1,8 +1,12 @@
 @media (max-width:767px) {
   .SubIntro {
-    padding-bottom: 2.1rem;
+    margin: 0;
+    padding-bottom: 3.8rem;
     border-bottom: 7px solid #ccc;
   }
+  .SubIntro.width {
+    width: 100%;
+}
   .SubIntro .intro_img_area .img_box img {
     height: auto;
   }

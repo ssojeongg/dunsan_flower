@@ -33,4 +33,7 @@
     font-weight: bold;
     color: var(--color-black);
   }
+  .Footer.width {
+    width: 100%;
+  }
 }
