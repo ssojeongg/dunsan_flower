@@ -28,8 +28,9 @@ const toggleFab = () => {
   <div className="FloatingBtn">
 
     {/* 배경 블러 오버레이 */}
+    <div className="fab_overlay_area">
       <div className={`fab_overlay ${isOpen ? 'show' : ''}`} onClick={toggleFab} />
-
+    </div>
     <div className="fab_container">
       {isMobile && (
           <button className="fab_main" onClick={() => setIsOpen(!isOpen)}>

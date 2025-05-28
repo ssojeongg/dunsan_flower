@@ -155,6 +155,9 @@
   transition: opacity 0.3s ease;
 }
 
+.fab_overlay_area {
+  display: block;
+}
 .fab_overlay.show {
   opacity: 1;
   pointer-events: auto;
