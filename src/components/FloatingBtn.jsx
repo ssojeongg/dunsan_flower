@@ -75,12 +75,6 @@ const FloatingBtn = () => {
               </div>
             </button>
             <button className="fab_item" onClick={() => setIsFabOpen(false)}>
-              <div className="fab_icon">
-                <FontAwesomeIcon icon={faGift} />
-                <span className="fab_text">쇼핑몰</span>
-              </div>
-            </button>
-            <button className="fab_item" onClick={() => setIsFabOpen(false)}>
               <Link to="/sub/9">
                 <div className="fab_icon">
                   <FontAwesomeIcon icon={faB} />
@@ -113,12 +107,6 @@ const FloatingBtn = () => {
             <div className="fab_pc_icon">
               <FontAwesomeIcon icon={faPen} />
               <span className="fab_pc_text">포스트</span>
-            </div>
-          </button>
-          <button className="fab_pc_item">
-            <div className="fab_pc_icon">
-              <FontAwesomeIcon icon={faGift} />
-              <span className="fab_pc_text">쇼핑몰</span>
             </div>
           </button>
           <button className="fab_pc_item">

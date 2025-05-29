@@ -124,12 +124,6 @@ const Header = () => {
                   </div>
                   <span className="site_text">포스트</span>
                 </button>
-                <button className="site_item" >
-                  <div className="site_img_box">
-                    <FontAwesomeIcon icon={faGift} />
-                  </div>
-                  <span className="site_text">쇼핑몰</span>
-                </button>
                   <Link to="/sub/9">
                 <button className="site_item">
                     <div className="site_img_box">
