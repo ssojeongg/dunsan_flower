@@ -12,7 +12,7 @@ const Footer = () => {
       <div className="inner">
         <div className="ft_top">
           <div className="search_area">
-            <p className="keyword">
+            <p className="keyword" onClick={() => window.open("https://search.naver.com/search.naver?ie=UTF-8&query=%EB%8C%80%EC%A0%84%EA%BD%83%EB%B0%B0%EB%8B%AC+%EB%91%94%EC%82%B0%ED%94%8C%EB%9D%BC%EC%9B%8C%40")}>
               대전꽃배달 둔산플라워@
             </p>
             <div className="ft_bottom">

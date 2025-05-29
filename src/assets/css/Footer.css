@@ -24,6 +24,7 @@
   color: #fff;
   text-align: center;
   position: relative;
+  cursor: pointer;
 }
 .Footer > .inner > .ft_top > .search_area > .keyword::after {
   position: absolute;
