@@ -12,6 +12,9 @@ const Footer = () => {
       <div className="inner">
         <div className="ft_top">
           <div className="search_area">
+            <p className="keyword">
+              대전꽃배달 둔산플라워@
+            </p>
             <div className="ft_bottom">
           <div className="ft_left">
             <ul className="list_info">

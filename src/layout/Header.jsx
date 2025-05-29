@@ -86,7 +86,7 @@ const Header = () => {
               <li className={selectedMenu && selectedMenu !== 1 ? 'black' : ''} onClick={openMenu}>
                 ☰ 전체보기
               </li>
-              <li className={selectedMenu && selectedMenu !== 1 ? 'gray' : ''}>로그인</li>
+   
             </ul>
           </div>
         </div>

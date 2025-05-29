@@ -29,10 +29,20 @@
     border: 2px solid var(--color-green);
   } 
   .btn_area {
+    display: none;
     margin-top: 0.5rem;
     margin-bottom: 0.7rem;
   }
   .btn {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 1rem;
+  }
+  .mob_btn_area {
+    display: flex;
+  }
+  .mob_btn {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -48,4 +58,23 @@
     width: calc(50% - 0.5rem);
     height: auto;
   }
+
+  .fab_overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.764);
+  backdrop-filter: blur(7px);
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.fab_overlay_area {
+  display: block;
+}
+.fab_overlay.show {
+  opacity: 1;
+  pointer-events: auto;
+}
 }

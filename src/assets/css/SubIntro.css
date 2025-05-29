@@ -48,17 +48,37 @@
   margin-bottom: 2.5rem;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   background-color: var(--color-green);
   color: #fff;
   padding: 1.2rem 0;
+  cursor: pointer;
 }
 .btn {
   width: 33.3%;
   text-align: center;
   font-size: 1.2rem;
 }
+.mob_btn_area {
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--color-green);
+  color: #fff;
+  padding: 1.2rem 0;
+  display: none;
+  cursor: pointer;
+}
+.mob_btn {
+  width: 33.3%;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
 .sub_intro_img {
   margin-top: 6rem;
   display: flex;

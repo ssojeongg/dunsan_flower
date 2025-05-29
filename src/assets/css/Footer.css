@@ -11,6 +11,20 @@
   display: flex;
   justify-content: space-between;
 }
+.Footer > .inner > .ft_top > .search_area > .keyword {
+  display: inline-block;
+  min-width: 222px;
+  height: 45px;
+  margin: 2px 0 28px;
+  padding-right: 10px;
+  border: 1px solid #333;
+  line-height: 45px;
+  letter-spacing: -.8px;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
 .Footer > .inner > .ft_top > .search_area > .keyword::after {
   position: absolute;
   right: 10px;
