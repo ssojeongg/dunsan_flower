@@ -1,3 +1,5 @@
+const isProdOnGhPages = import.meta.env.VITE_DEPLOY_TARGET === 'GH_PAGES'; // ✅ 여기 추가
+
 import './assets/css/App.css';
 import Header from './layout/Header';
 import Main from './layout/Main';
@@ -11,7 +13,6 @@ import SubWreath from './pages/SubWreath';
 import { BrowserRouter, Routes, Route, useLocation, useNavigate } from 'react-router-dom';
 import { useSwipeable } from 'react-swipeable';
 
-const isProdOnGhPages = import.meta.env.VITE_DEPLOY_TARGET === 'GH_PAGES'; // ✅ 여기 추가
 
 const subPageOrder = [
   "/sub/1", "/sub/2", "/sub/3", "/sub/4", "/sub/5",
