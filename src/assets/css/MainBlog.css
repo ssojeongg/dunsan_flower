@@ -1,6 +1,5 @@
 .MainBlog {
   width: 100vw;
-  margin-bottom: 6.1rem;
 }
 .MainBlog.width {
   width: calc(100% - 320px);
