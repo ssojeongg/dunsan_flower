@@ -8,25 +8,16 @@ import SubBlog from './pages/SubBlog';
 import Subpage from './pages/Subpage';
 import SubIntro from './pages/SubIntro';
 import SubWreath from './pages/SubWreath';
-
 import { BrowserRouter, Routes, Route, useLocation, useNavigate } from 'react-router-dom';
 import { useSwipeable } from 'react-swipeable';
 
-// 스와이프 페이지 순서 정의
+const isProdOnGhPages = import.meta.env.VITE_DEPLOY_TARGET === 'GH_PAGES'; // ✅ 여기 추가
+
 const subPageOrder = [
-  "/sub/1",
-  "/sub/2",
-  "/sub/3",
-  "/sub/4",
-  "/sub/5",
-  "/sub/6",
-  "/sub/7",
-  "/sub/8",
-  "/sub/9",
-  "/sub/10"
+  "/sub/1", "/sub/2", "/sub/3", "/sub/4", "/sub/5",
+  "/sub/6", "/sub/7", "/sub/8", "/sub/9", "/sub/10"
 ];
 
-// 스와이프 핸들러 컴포넌트
 const SwipeHandler = ({ children }) => {
   const navigate = useNavigate();
   const location = useLocation();
@@ -58,12 +49,11 @@ const SwipeHandler = ({ children }) => {
   );
 };
 
-// App 컴포넌트
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={isProdOnGhPages ? '/dunsan_flower' : '/'}>
       <SwipeHandler>
-        <div className="App"  basename={isProdOnGhPages ? '/dunsan_flower' : '/'}>
+        <div className="App">
           <Header />
           <Routes>
             <Route path="/" element={<Main />} />
