@@ -19,6 +19,7 @@
 .Subpage .subpage_img > .img_wrap > .img_box {
   width: 353px;
   height: 235px;
+  position: relative;
 }
 .Subpage .subpage_img > .img_wrap > .img_box > img {
   width: 100%;
@@ -67,3 +68,16 @@
   overflow: hidden;
   margin: 0;
 }
+ .best_badge {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  background-color: #ff2500;
+  color: var(--color-white);
+  padding: 0.2rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+  z-index: 2;
+}
+
+

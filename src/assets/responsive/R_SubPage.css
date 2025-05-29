@@ -6,6 +6,11 @@
   .Subpage.mobile_3 {
     padding-bottom: 3.5rem;
   }
+  .Subpage.mobile_3 .subpage_img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
   .Subpage.mobile_3 .subpage_img > .img_wrap > .img_box {
     width: auto;
     height: auto;
@@ -75,10 +80,13 @@
     flex-wrap: nowrap;
   }
 
+  
+
 
   .Subpage.mobile_common .subpage_img > .img_wrap > .img_box {
       width: auto;
       height: auto;
+      position: relative;
   }
   .Subpage.Subpage.mobile_common .subpage_img .img_wrap img {
     height: 195px;
@@ -102,4 +110,3 @@
     margin: 0;
   }
 }
-
