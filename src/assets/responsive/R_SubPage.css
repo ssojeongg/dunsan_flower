@@ -70,6 +70,7 @@
     width: 45%;
     display: flex;
     flex-wrap: nowrap;
+    justify-content: space-between;
   }
   .Subpage.mobile_3 .subpage_img .img_wrap:nth-of-type(n+3) img {
     height: 195px;
@@ -79,7 +80,17 @@
     display: flex;
     flex-wrap: nowrap;
   }
-
+ .Subpage .best_badge {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  background-color: #ff2500;
+  color: var(--color-white);
+  padding: 0.2rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+  z-index: 2;
+}
   
 
 
@@ -95,7 +106,7 @@
     padding-top: 0;
   }
   .Subpage.mobile_common .txt_box .img_name {
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin: 0;
     color: var(--color-black);
     font-weight: bold;
