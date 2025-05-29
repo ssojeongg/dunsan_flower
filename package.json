@@ -1,14 +1,14 @@
 {
-  "homepage": "http://ssogeongg.github.io/dunsan_flower",
   "name": "dunsan_flower",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+    "deploy": "npm run build:gh && gh-pages -d dist",
     "dev": "vite --host",
     "build": "vite build",
+    "build:gh": "vite build --mode gh-pages",
     "lint": "eslint .",
     "preview": "vite preview"
   },

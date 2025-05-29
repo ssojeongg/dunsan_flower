@@ -61,9 +61,9 @@ const SwipeHandler = ({ children }) => {
 // App 컴포넌트
 function App() {
   return (
-    <BrowserRouter basename='/dunsan_flower/'>
+    <BrowserRouter>
       <SwipeHandler>
-        <div className="App">
+        <div className="App"  basename={isProdOnGhPages ? '/dunsan_flower' : '/'}>
           <Header />
           <Routes>
             <Route path="/" element={<Main />} />

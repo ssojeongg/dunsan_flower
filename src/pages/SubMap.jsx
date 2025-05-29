@@ -24,8 +24,8 @@ const SubMap = () => {
             <h2>서림빌딩 1층 105호</h2>
           </div>          
             <div className="map_btn">
-              <button><FontAwesomeIcon icon={faDiamondTurnRight} />길찾기</button>
-              <button><FontAwesomeIcon icon={faLocationDot} />지도에서보기</button>
+              <button  onClick={() => window.open("https://map.naver.com/p/directions/-/14180938.05727241,4349344.189872286,%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%84%9C%EA%B5%AC%20%EB%91%94%EC%82%B0%EB%8F%99%201391,,/-/transit?c=14180938.05727241,4349344.189872286,15,0,0,0,dh?c=,,15,0,0,0,dh")}><FontAwesomeIcon icon={faDiamondTurnRight}/>길찾기</button>
+              <button onClick={() => window.open("https://map.naver.com/p/?title=%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%84%9C%EA%B5%AC%20%EB%91%94%EC%82%B0%EB%8F%99%201391&lng=127.389534&lat=36.3532982&zoom=13&type=0")}><FontAwesomeIcon icon={faLocationDot} />지도에서보기</button>
             </div>
           </div>
           <div className="map_visit">
