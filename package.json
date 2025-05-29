@@ -22,6 +22,7 @@
     "react-router-dom": "^7.6.1",
     "react-swipeable": "^7.0.2",
     "swiper": "^11.2.7",
+    "vite-plugin-favicon": "^1.0.8",
     "zustand": "^5.0.5"
   },
   "devDependencies": {
