@@ -7,6 +7,7 @@ import TitleTheme from '../components/TitleTheme';
 
 import useSideMenuStore from '../store/sideMenuStore';
 import useIsMobile from '../assets/hooks/useIsMobile';
+import { useState } from 'react';
 
 const Subpage = () => {
   const { id } = useParams();
@@ -18,6 +19,16 @@ const Subpage = () => {
   const className = `Subpage ${sideMenuOpen ? 'width' : ''} ${
     isMobile && [4, 5, 6, 7].includes(pageId) ? 'mobile_common' : `mobile_${pageId}`
   }`;
+
+  const [selectedImgIndex, setSelectedImgIndex] = useState(null);
+
+  const openImgClick = (index) => {
+    setSelectedImgIndex(index);
+  };
+
+  const closeImgClick = () => {
+    setSelectedImgIndex(null);
+  };
 
   return (
     <div className={className}>
@@ -33,7 +44,10 @@ const Subpage = () => {
 
               return (
                 <div className="img_wrap" key={index}>
-                  <div className="img_box">
+                  <div 
+                    className="img_box" 
+                    onClick={() => openImgClick(index)}
+                  >
                     <img src={imgSrc} alt={currentData.title?.[index] || `이미지${index + 1}`} />
                     {(isBest || isBest2 || isBest3 || isBest4) && <span className="best_badge">BEST</span>}
                   </div>
@@ -51,6 +65,23 @@ const Subpage = () => {
             <p>해당 데이터가 없습니다.</p>
           )}
         </div>
+
+        {/* 상세 이미지 모달 */}
+        {selectedImgIndex !== null && (
+          <div className="detail_overlay" onClick={closeImgClick}>
+            <div className="detail_img_container" onClick={(e) => e.stopPropagation()}>
+              <div className="button_area">
+                <button className="close_btn" onClick={closeImgClick}>
+                  ×
+                </button>
+              </div>
+              <img
+                src={currentData.img[selectedImgIndex]}
+                alt={currentData.title?.[selectedImgIndex] || `상세 이미지 ${selectedImgIndex + 1}`}
+              />
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
